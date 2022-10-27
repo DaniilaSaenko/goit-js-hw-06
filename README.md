@@ -66,12 +66,12 @@ Elements: 5
 В JavaScript есть массив строк.
 
 const ingredients = [
-"Potatoes",
-"Mushrooms",
-"Garlic",
-"Tomatos",
-"Herbs",
-"Condiments",
+  "Potatoes",
+  "Mushrooms",
+  "Garlic",
+  "Tomatos",
+  "Herbs",
+  "Condiments",
 ];
 
 Напиши скрипт, который для каждого элемента массива ingredients:
@@ -90,18 +90,18 @@ const ingredients = [
 Все элементы галереи должны добавляться в DOM за одну операцию вставки.
 Добавь минимальное оформление галереи флексбоксами или гридами через CSS классы.
 const images = [
-{
-url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260",
-alt: "White and Black Long Fur Cat",
-},
-{
-url: "https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?dpr=2&h=750&w=1260",
-alt: "Orange and White Koi Fish Near Yellow Koi Fish",
-},
-{
-url: "https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?dpr=2&h=750&w=1260",
-alt: "Group of Horses Running",
-},
+  {
+    url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260",
+    alt: "White and Black Long Fur Cat",
+  },
+  {
+    url: "https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?dpr=2&h=750&w=1260",
+    alt: "Orange and White Koi Fish Near Yellow Koi Fish",
+  },
+  {
+    url: "https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?dpr=2&h=750&w=1260",
+    alt: "Group of Horses Running",
+  },
 ];
 
 Задание 4
@@ -137,15 +137,15 @@ alt: "Group of Horses Running",
 Для добавления стилей, используй CSS-классы valid и invalid, которые мы уже добавили в исходные файлы задания.
 
 #validation-input {
-border: 3px solid #bdbdbd;
+  border: 3px solid #bdbdbd;
 }
 
 #validation-input.valid {
-border-color: #4caf50;
+  border-color: #4caf50;
 }
 
 #validation-input.invalid {
-border-color: #f44336;
+  border-color: #f44336;
 }
 
 Задание 7
@@ -186,7 +186,9 @@ border-color: #f44336;
 Для генерации случайного цвета используй функцию getRandomHexColor.
 
 function getRandomHexColor() {
-return `#${Math.floor(Math.random() * 16777215) .toString(16) .padStart(6, 0)}`;
+  return `#${Math.floor(Math.random() * 16777215)
+    .toString(16)
+    .padStart(6, 0)}`;
 }
 
 Задание 10 (выполнять не обязательно)
@@ -206,7 +208,9 @@ return `#${Math.floor(Math.random() * 16777215) .toString(16) .padStart(6, 0)}`;
 Каждый элемент после первого, должен быть шире и выше предыдущего на 10px.
 Все элементы должены иметь случайный цвет фона в формате HEX. Используй готовую функцию getRandomHexColor для получения цвета.
 function getRandomHexColor() {
-return `#${Math.floor(Math.random() * 16777215) .toString(16) .padStart(6, 0)}`;
+  return `#${Math.floor(Math.random() * 16777215)
+    .toString(16)
+    .padStart(6, 0)}`;
 }
 
 Создай функцию destroyBoxes(), которая очищает содержимое div#boxes, тем самым удаляя все созданные элементы.
