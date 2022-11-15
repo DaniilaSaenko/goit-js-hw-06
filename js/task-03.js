@@ -24,10 +24,11 @@ const markup = images
 
 list.insertAdjacentHTML("beforeend", markup);
 
-const pictures = document.querySelectorAll(".picture");
+list.style = `list-style: none;
+display: grid;
+grid-auto-flow: column;
+gap: 20px;
+align-items: center;
+justify-content: center;
+`;
 
-list.style.listStyle = "none";
-list.style.display = "grid";
-list.style.gridAutoFlow = "column";
-list.style.gap = "20px";
-list.style.justifyContent = "center";
