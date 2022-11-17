@@ -13,22 +13,14 @@ const images = [
   },
 ];
 
-const list = document.querySelector(".gallery");
-
-const markup = images
+const markUp = images
   .map(
     (image) =>
-      `<li><img class="picture" src=${image.url} width = '330' alt='${image.alt}'></img></li>`
+      `<li><img class="image-item" src=${image.url} alt='${image.alt}'></img></li>`
   )
   .join("");
 
-list.insertAdjacentHTML("beforeend", markup);
+const list = document.querySelector(".gallery");
 
-list.style = `list-style: none;
-display: grid;
-grid-auto-flow: column;
-gap: 20px;
-align-items: center;
-justify-content: center;
-`;
+list.insertAdjacentHTML("beforeend", markUp);
 
