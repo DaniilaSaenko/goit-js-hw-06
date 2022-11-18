@@ -18,7 +18,8 @@ const markUp = images
     (image) =>
       `<li><img class="image-item" src=${image.url} alt='${image.alt}'></img></li>`
   )
-  .join("");
+  .join(""); 
+
 
 const list = document.querySelector(".gallery");
 
