@@ -22,4 +22,3 @@ btnIncrement.addEventListener("click", () => {
   counter.increment();
   displayCounter.textContent = counter.counterValue;
 });
-console.log();

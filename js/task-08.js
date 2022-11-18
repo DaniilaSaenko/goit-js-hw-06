@@ -11,7 +11,8 @@ function handleSubmit(e) {
   if (email.value === "" || password.value === "") {
     return alert("Заполните все поля, пожалуйста!");
   }
-  const userDetails = { email: email.value, Password: password.value };
+
+  console.log(`Email: ${email.value} Password: ${password.value}`);
 
   e.currentTarget.reset();
 }
